@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root { 
-  /*--cor-de-fundo: #297030;*/
-    --cor-de-fundo: #a12a2a;
-    --verde: #e5e3ec;
+    --cor-de-fundo: #19e0d3;
+    --verde: #faf6f6;
     --branco: #f9f8f8;
-    --botao-ativo: #2ac4c4;
-    --botao-inativo: rgba(177, 174, 174, 0.5);
-    --texto-fundo: rgba(248, 249, 251, 0.993);
+    --botao-ativo: #15dbdb;
+    --botao-inativo: rgba(134, 143, 143, 0.5);
+    --texto-fundo: rgba(0, 83, 249, 0.3);
 }
 
 
@@ -48,40 +47,3 @@ text-align: left;
 width:100%;
 font-size: 32px;
 }
-
-.botoes {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .botoes {
-    display: flex;
-  }
-}
-
-.botao:first-child {
-   border-radius: 40px 0 0 0;
-}
-
-.botao:last-child {
-      border-radius: 0 40px 0 0;
-}
-
-.botao.ativo {
-background-color: var(--botao-ativo);
-border-bottom: 10px solid var(--verde);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
