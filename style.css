@@ -1,20 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root { 
-  /*--cor-de-fundo: #297030;*/
+  --cor-de-fundo: #297030;
     --cor-de-fundo: #fbfbfb;
     --verde: #756e8c;
     --branco: #0c0b0b;
     --botao-ativo: #b8aee8;
-    --botao-inativo: rgba(177, 174, 174, 0.5);
-    --texto-fundo: rgba(248, 249, 251, 0.993);
+    --botao-inativo: rgba(99, 90, 90, 0.5);
+    --texto-fundo: rgba(75, 127, 229, 0.993);
 }
-
-
-
-
-
-
 body {
 
     background-color: var(--cor-de-fundo);
@@ -71,6 +65,19 @@ font-size: 32px;
 background-color: var(--botao-ativo);
 border-bottom: 10px solid var(--verde);
 }
+
+.abas-textos{
+background-color: var(--texto-fundo);
+padding: 40px;
+border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+  display:block;
+}
+.aba-conteudo{
+  display: none;
+}
+
 
 
 
