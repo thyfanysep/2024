@@ -23,7 +23,7 @@ const botoes = document.querySelectorAll('.botao');
 
  const contadores = document.querySelectorAll('.contador');
  contadores [0].textContent = 'Contagem regressiva';
- const tempoObjetivo1 = new Date('2024-08-18T00:00:00');
+ const tempoObjetivo1 = new Date('2024-08-05T00:00:00');
  let tempoAtual = new Date ();
 
  contadores[0].textContent = calculatempo(tempoObjetivo1 );
@@ -31,13 +31,6 @@ const botoes = document.querySelectorAll('.botao');
  function calculatempo(tempoObjetivo) {
     let tempoAtual = new Date ();
     let tempoFinal = tempoObjetivo - tempoAtual;
-    let segundos = Math.floor(tempoFinal/ 1000);
-    let minutos = Math.floor( segundos/ 60);
-    let horas = Math.floor(minutos / 60);
-    let dias = Math.floor(horas / 24);
-
-    horas%=24;
-    
-    return dias + " dias " + horas + " horas " + minutos + " minutos "+ segundos + " segundos "; 
-
+    let segundos = tempoFinal/ 1000;
+    return segundos = Math.floor(tempoFinal / 1000); 
  }
